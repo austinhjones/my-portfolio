@@ -1,5 +1,6 @@
 import { borderRadius, colors, fontSize, spacing } from "../../../utils/style"
 
+import media from "../../../utils/media-query"
 import styled from "styled-components"
 
 export const SkillWrapper = styled.div`
@@ -15,15 +16,23 @@ export const SkillWrapper = styled.div`
 
 export const SkillNameWrapper = styled.span`
   display: inline-block;
-  width: 100px;
+  width: 110px;
   text-align: end;
   margin-right: ${spacing.sm};
+
+  ${media.desktop`
+    width: 90px;
+  `};
 `
 
 export const SkillName = styled.span`
   font-family: IBMPlexMono;
   font-size: ${fontSize.sm};
   color: ${colors.white};
+
+  ${media.desktop`
+    font-size: 14px;
+  `};
 `
 
 export const SkillAptitudeBar = styled.span`

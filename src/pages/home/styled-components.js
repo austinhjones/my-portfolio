@@ -18,14 +18,14 @@ export const Title = styled.h1`
   `};
 
   ${media.tablet`
-    font-size: 70px;
+    font-size: 66px;
     &:last-child {
       padding-bottom: ${spacing.xxl};
     }
   `};
 
   ${media.phone`
-    font-size: ${fontSize.lg};
+    font-size: 44px;
     &:last-child {
       padding-bottom: ${spacing.xxl};
     }
@@ -44,7 +44,7 @@ export const Subtitle = styled.h2`
   `};
 
   ${media.phone`
-    font-size: ${fontSize.sm};
+    font-size: 24px;
     margin-bottom: ${spacing.sm};
   `};
 `

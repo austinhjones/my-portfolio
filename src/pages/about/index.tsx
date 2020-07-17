@@ -1,12 +1,12 @@
 import {
+  DescriptionRowWrapper,
+  DescriptionSection,
   DescriptionWrapper,
-  QuickFactsWrapper,
-  SkillsWrapper,
+  Label,
+  SkillsSection,
   Text,
   TextWrapper,
   Thumbnail,
-  Title,
-  TitleWrapper,
 } from "./styled-components"
 import SkillRow, { SKILLS } from "./SkillRow"
 
@@ -17,28 +17,33 @@ import React from "react"
 const AboutPage = () => {
   return (
     <PageWrapper>
-      <DescriptionWrapper>
+      <DescriptionSection>
         <Thumbnail>
           <Image />
         </Thumbnail>
-        <QuickFactsWrapper>
-          <TitleWrapper>
-            <Title>current job</Title>
-            <Title>education</Title>
-          </TitleWrapper>
-          <TextWrapper>
-            <Text>full stack engineer, chan zuckerberg initiative</Text>
-            <Text>
-              stanford university, m.s. computer science + b.a. economics
-            </Text>
-          </TextWrapper>
-        </QuickFactsWrapper>
-      </DescriptionWrapper>
-      <SkillsWrapper>
+        <DescriptionWrapper>
+          <DescriptionRowWrapper>
+            <Label>current job</Label>
+            <TextWrapper>
+              <Text>chan zuckerberg initiative &#160;&#183; &#160;</Text>
+              <Text>full stack engineer</Text>
+            </TextWrapper>
+          </DescriptionRowWrapper>
+          <DescriptionRowWrapper>
+            <Label>education</Label>
+            <TextWrapper>
+              <Text>stanford university &#160;&#183; &#160;</Text>
+              <Text>m.s. computer science +&#160;</Text>
+              <Text>b.a. economics</Text>
+            </TextWrapper>
+          </DescriptionRowWrapper>
+        </DescriptionWrapper>
+      </DescriptionSection>
+      <SkillsSection>
         {SKILLS.map(skill => (
           <SkillRow skill={skill}></SkillRow>
         ))}
-      </SkillsWrapper>
+      </SkillsSection>
     </PageWrapper>
   )
 }

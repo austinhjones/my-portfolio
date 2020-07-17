@@ -11,11 +11,11 @@ export const Container = styled.div`
   `};
 
   ${media.tablet`
-    width: 600px;
+    width: 440px;
   `};
 
   ${media.phone`
-    width: 450px;
+    width: 300px;
   `};
 `
 
