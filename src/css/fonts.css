@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "IBMPlexMono";
+  src: local("IBMPlexMono-Regular"),
+    url(../fonts/IBMPlexMono-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Muli";
+  src: local("Muli-Regular"), url(../fonts/Muli-Regular.ttf) format("ttf");
+}
