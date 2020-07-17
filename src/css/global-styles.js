@@ -7,15 +7,11 @@ export const Container = styled.div`
   width: 960px;
 
   ${media.desktop`
-    width: 760px;
+    width: 95%;
   `};
 
   ${media.tablet`
-    width: 440px;
-  `};
-
-  ${media.phone`
-    width: 300px;
+    width: 90%;
   `};
 `
 

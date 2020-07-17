@@ -52,7 +52,7 @@ export const Label = styled.span`
   `};
 
   ${media.phone`
-    font-size: 12px;
+    font-size: ${fontSize.xs};
   `};
 `
 
@@ -60,7 +60,10 @@ export const TextWrapper = styled.div`
   display: inline-flex;
   flex-direction: row;
 
-  ${media.tablet`
+  ${media.phone`
+  `};
+
+  ${media.lgPhone`
     flex-direction: column;
   `};
 `
@@ -75,7 +78,7 @@ export const Text = styled.span`
   `};
 
   ${media.phone`
-    font-size: 12px;
+    font-size: ${fontSize.xs};
   `};
 `
 
@@ -87,6 +90,10 @@ export const SkillsSection = styled.div`
 
   ${media.tablet`
     padding: ${spacing.med};
+  `};
+
+  ${media.lgPhone`
+    padding: 20px;
   `};
 
   ${media.phone`

@@ -23,6 +23,10 @@ export const SkillNameWrapper = styled.span`
   ${media.desktop`
     width: 90px;
   `};
+
+  ${media.tablet`
+    width: 80px;
+  `};
 `
 
 export const SkillName = styled.span`
@@ -33,12 +37,24 @@ export const SkillName = styled.span`
   ${media.desktop`
     font-size: 14px;
   `};
+
+  ${media.phone`
+    font-size: ${fontSize.xs};
+  `};
 `
 
 export const SkillAptitudeBar = styled.span`
   display: inline-block;
   height: 20px;
-  width: ${props => `${props.width}`};
+  width: ${props => `${props.width}%`};
   background-image: linear-gradient(to right, #e76a6a, #e59090);
   border-radius: ${borderRadius.sm};
+
+  ${media.tablet`
+    width: ${props => `${props.width * 0.9}%`};
+  `};
+
+  ${media.phone`
+    width: ${props => `${props.width * 0.75}%`};
+  `};
 `

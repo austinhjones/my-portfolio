@@ -53,7 +53,7 @@ const SkillRow: React.FC<Props> = ({ skill }) => {
       <SkillNameWrapper>
         <SkillName>{skill.name}</SkillName>
       </SkillNameWrapper>
-      <SkillAptitudeBar width={`${skill.percentageAptitude}%`} />
+      <SkillAptitudeBar width={skill.percentageAptitude} />
     </SkillWrapper>
   )
 }

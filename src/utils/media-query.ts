@@ -1,17 +1,12 @@
-import { css } from 'styled-components'
+import { css } from "styled-components"
 
 export const sizes = {
-  desktop: 1025,
   giant: 1281,
+  desktop: 1025,
+  tablet: 801,
+  lgPhone: 601,
   phone: 480,
   smPhone: 320,
-  tablet: 801,
-}
-
-export const minSizesEm = {
-  desktop: (sizes.tablet + 1) / 16,
-  giant: (sizes.desktop + 1) / 16,
-  tablet: (sizes.phone + 1) / 16,
 }
 
 // iterate through the sizes and create a media template
